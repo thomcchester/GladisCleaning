@@ -1,0 +1,22 @@
+{
+  "name": "gladiscleaning",
+  "version": "0.0.0",
+  "description": "website for gladis",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomcchester/GladisCleaning.git"
+  },
+  "keywords": [
+    "cleaning"
+  ],
+  "author": "Thomas Chester",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thomcchester/GladisCleaning/issues"
+  },
+  "homepage": "https://github.com/thomcchester/GladisCleaning#readme"
+}
