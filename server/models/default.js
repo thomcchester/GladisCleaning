@@ -5,7 +5,26 @@ var Schema = mongoose.Schema;
 
 var Default_Values = new Schema({
 
-      someValue: {type: Number},
+  headerBackgroundColor:{type: String},
+  headerBackgroundHeight:{type: Number},
+  sideNavWidth:{type: Number},
+  sideNavBackgroundColor:{type: String},
+  headMainText:{type: String},
+  headMainTextSize:{type: Number},
+  headMainTextColor:{type: String},
+  headMainTextBold:{type: Boolean},
+  headMainTextItal:{type: Boolean},
+  secondText:{type: String},
+  secondTextSize:{type: Number},
+  secondTextColor:{type: String},
+  secondTextBold:{type: Boolean},
+  secondTextItal:{type: Boolean},
+  thirdText:{type: String},
+  thirdTextSize:{type: Number},
+  thirdTextColor:{type: String},
+  thirdTextBold:{type: Boolean},
+  thirdTextItal:{type: Boolean},
+  someValue: {type: Number}
 
 });
 
