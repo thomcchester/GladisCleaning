@@ -27,6 +27,7 @@ module.exports = function(grunt) {
               "angular-route/*",
               "angular-sanitize/*",
               "angular-cookies/*",
+              "angular-material-data-table/**",
               "angular-google-chart/*"
             ],
             "dest": "server/public/vendors/"
