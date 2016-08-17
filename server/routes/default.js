@@ -31,13 +31,22 @@ router.route('/')
             secondTextSize : req.body.secondTextSize,
             secondTextColor : req.body.secondTextColor,
             secondTextBold : req.body.secondTextBold,
-            secondTextBold : req.body.secondTextBold,
             secondTextItal : req.body.secondTextItal,
             thirdText : req.body.thirdText,
             thirdTextSize : req.body.thirdTextSize,
             thirdTextColor : req.body.thirdTextColor,
             thirdTextBold : req.body.thirdTextBold,
-            thirdTextItal : req.body.thirdTextItal
+            thirdTextItal : req.body.thirdTextItal,
+            sideTextOne : req.body.sideTextOne,
+            sideTextTwo : req.body.sideTextTwo,
+            sideTextThree : req.body.sideTextThree,
+            sideTextFour : req.body.sideTextFour,
+            sideTextFive : req.body.sideTextFive,
+            sideTextSix : req.body.sideTextSix,
+            sideTextSeven : req.body.sideTextSeven,
+            sideTextEight : req.body.sideTextEight,
+            sideTextNine : req.body.sideTextNine,
+            sideTextTen : req.body.sideTextTen
 
         });
         defaults.save(function(err, defaults){
@@ -72,6 +81,20 @@ router.route('/')
             defaults.thirdTextColor = req.body.thirdTextColor;
             defaults.thirdTextBold = req.body.thirdTextBold;
             defaults.thirdTextItal = req.body.thirdTextItal;
+            defaults.sideTextOne = req.body.sideTextOne;
+            defaults.sideTextTwo = req.body.sideTextTwo;
+            defaults.sideTextThree = req.body.sideTextThree;
+            defaults.sideTextFour = req.body.sideTextFour;
+            defaults.sideTextFive = req.body.sideTextFive;
+            defaults.sideTextSix = req.body.sideTextSix;
+            defaults.sideTextSeven = req.body.sideTextSix;
+            defaults.sideTextEight = req.body.sideTextSeven;
+            defaults.sideTextNine = req.body.sideTextEight;
+            defaults.sideFont = req.body.sideFont;
+            defaults.sideSize = req.body.sideSize;
+            defaults.sideFontColor = req.body.sideFontColor;
+
+
 
 
 

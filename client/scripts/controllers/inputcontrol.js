@@ -16,40 +16,71 @@ $scope.getDefaults = function() {
       defaultVariables = response.data[0];
       $scope.minMax = defaultVariables;
 
-      $scope.inputData.monthlyRentPersonal= defaultVariables.monthlyRentPersonalDef;
-      $scope.inputData.monthlyRentTenant= defaultVariables.monthlyRentTenantDef;
-      $scope.inputData.targetPrice= defaultVariables.targetPriceDef;
-      $scope.inputData.downPaymentPercentage= defaultVariables.downPaymentPercentageDef;
-      $scope.inputData.mortgageRate= defaultVariables.mortgageRateDef;
-      $scope.inputData.yearsAmmoritized= defaultVariables.yearsAmmoritizedDef;
-      $scope.inputData.income= defaultVariables.incomeDef;
-      $scope.inputData.mortgageYears= defaultVariables.mortgageYearsDef;
-      $scope.inputData.vacancy= defaultVariables.vacancyDef;
-      $scope.inputData.propertyTax= defaultVariables.propertyTaxDef;
-      $scope.inputData.assocDues= defaultVariables.assocDuesDef;
-      $scope.inputData.management= defaultVariables.managementDef;
-      $scope.inputData.misc= defaultVariables.miscDef;
-      $scope.inputData.insuranceAnnual= defaultVariables.insuranceAnnualDef;
-      $scope.inputData.utils= defaultVariables.utilsDef;
-      $scope.inputData.legalAccounting= defaultVariables.legalAccountingDef;
-      $scope.inputData.taxBracket= defaultVariables.taxBracketDef;
-      $scope.inputData.repairValue= defaultVariables.repairValueDef;
-      $scope.inputData.years= defaultVariables.yearsDef;
-      $scope.inputData.maritalStatus = false;
-      $scope.inputData.zipCode = defaultVariables.zipCode;
-      $scope.inputData.appreciationRate =defaultVariables.appreciationRateDef;
-      $scope.inputData.appreciationRateHome =defaultVariables.appreciationRateHomeDef;
-      $scope.inputData.renterInsurance = defaultVariables.renterInsuranceDef;
-      $scope.inputData.duplexBuy = defaultVariables.duplexBuyDef;
-
+      $scope.inputData.someValue= defaultVariables.someValue;
+      $scope.inputData.headerBackgroundColor= defaultVariables.headerBackgroundColor;
+      $scope.inputData.headerBackgroundHeight= defaultVariables.headerBackgroundHeight;
+      $scope.inputData.sideNavWidth= defaultVariables.sideNavWidth;
+      $scope.inputData.sideNavBackgroundColor= defaultVariables.sideNavBackgroundColor;
+      $scope.inputData.headMainText= defaultVariables.headMainText;
+      $scope.inputData.headMainTextSize= defaultVariables.headMainTextSize;
+      $scope.inputData.headMainTextColor= defaultVariables.headMainTextColor;
+      $scope.inputData.headMainTextBold= defaultVariables.headMainTextBold;
+      $scope.inputData.headMainTextItal= defaultVariables.headMainTextItal;
+      $scope.inputData.secondText= defaultVariables.secondText;
+      $scope.inputData.secondTextSize= defaultVariables.secondTextSize;
+      $scope.inputData.secondTextColor= defaultVariables.secondTextColor;
+      $scope.inputData.secondTextBold= defaultVariables.secondTextBold;
+      $scope.inputData.thirdText= defaultVariables.thirdText;
+      $scope.inputData.thirdTextSize= defaultVariables.thirdTextSize;
+      $scope.inputData.thirdTextColor= defaultVariables.third;
+      $scope.inputData.thirdTextBold= defaultVariables.thirdTextBold;
+      $scope.inputData.thirdTextItal= defaultVariables.thirdTextItal;
+      $scope.inputData.sideTextOne= defaultVariables.sideTextOne;
+      $scope.inputData.sideTextTwo= defaultVariables.sideTextTwo;
+      $scope.inputData.sideTextThree= defaultVariables.sideTextThree;
+      $scope.inputData.sideTextFour= defaultVariables.sideTextFour;
+      $scope.inputData.sideTextFive= defaultVariables.sideTextFive;
+      $scope.inputData.sideTextSix= defaultVariables.sideTextSix;
+      $scope.inputData.sideTextSeven= defaultVariables.sideTextSeven;
+      $scope.inputData.sideTextEight= defaultVariables.sideTextEight;
+      $scope.inputData.sideTextNine= defaultVariables.sideTextNine;
+      $scope.inputData.sideTextTen= defaultVariables.sideTextTen;
+      $scope.inputData.sideFont = defaultVariables.sideFont;
+      $scope.inputData.sideSize = defaultVariables.sideSize;
+      $scope.inputData.sideFontColor = defaultVaribales.sideFontColor;
+      console.log(defaultVariables, "defaultVariables");
   });
 };
+
 $scope.getDefaults();
-console.log("duplexBuy", $scope.inputData.duplexBuy)
+console.log($scope.inputData)
 
 var service = ClientService;
 
 $scope.$watchCollection('inputData', function(newVal, oldVal){
+  var italics;
+  italics=function(input){
+    if(input==true){
+      input="italics";
+    }
+    else if(input==false){
+      input="normal";
+    };
+  };
+  var bold;
+  bold=function(input){
+    if(input==true){
+      input="bold"
+    }
+    else if(input==false){
+      input="normal"
+    }
+  }
+
+  italics(inputData.headMainTextItal);
+  italics(inputData.secondTextItal);
+  italics(inputData.thirdTextItal);
+
 
 });
 

@@ -26,16 +26,27 @@
     <header>
         <md-toolbar style="height:10vh;">
             <div layout="row" layout-align="center">
-                <h1>Gladis Cleaning Service</h1>
+                <h1 style="color:{{inputData.headMainTextColor}};font-size:{{inputData.headMainTextSize}};font-style:{{inputData.headMainTextItal}};font-weight:{{}}">{{inputData.headMainText}}</h1>
             </div>
         </md-toolbar>
     </header>
+    <iframe src="https://calendar.google.com/calendar/embed?src=thomas.charles.chester%40gmail.com&ctz=America/Chicago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
     <div layout="row">
         <md-sidenav md-component-id="left" class="md-sidenav-left md-whiteframe-z2" md-is-locked-open="true" style="overflow-y: scroll; height: 90vh;">
             <div layout="column" layout-align="center center" layout-padding>
                 <md-content>
                     <form>
                         <h2>Side Things</h2>
+                        <h3>{{inputData.sideTextOne}}</h3>
+                        <h3>{{inputData.sideTextTwo}}</h3>
+                        <h3>{{inputData.sideTextThree}}</h3>
+                        <h3>{{inputData.sideTextFour}}</h3>
+                        <h3>{{inputData.sideTextFive}}</h3>
+                        <h3>{{inputData.sideTextSix}}</h3>
+                        <h3>{{inputData.sideTextSeven}}</h3>
+                        <h3>{{inputData.sideTextEight}}</h3>
+                        <h3>{{inputData.sideTextNine}}</h3>
+                        <h3>{{inputData.sideTextTen}}</h3>
                     </form>
                 </md-content>
             </div>
@@ -44,12 +55,12 @@
             <md-content>
                 <div layout="column" layout-align="center center">
                     <div class="top-text" style="text-align:center;">
-                        <h2>Are you looking for a clean house?</h2>
-                        <p>I clean houses like a boss</p>
+                        <h2>{{inputData.secondText}}</h2>
+                        <p>{{inputData.thirdText}}</p>
                     </div>
 
                     <div class="summary">
-                        <h4>{{inputData.years}}, {{topMessage}}</h4>
+                        <h4></h4>
                     </div>
 
 

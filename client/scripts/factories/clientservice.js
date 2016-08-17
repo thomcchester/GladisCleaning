@@ -42,6 +42,19 @@ App.factory("ClientService", ["$http", function($http){
         thirdTextColor:"#000000",
         thirdTextBold:false,
         thirdTextItal:false,
+        sideTextOne:"thing 1",
+        sideTextTwo:"thing 2",
+        sideTextThree:"thing 3",
+        sideTextFour:"thing 4",
+        sideTextFive:"thing 5",
+        sideTextSix:"thing 6",
+        sideTextSeven: "thing 7",
+        sideTextEight: "thing 8",
+        sideTextNine: "thing 9",
+        sideTextTen: "thing 10",
+        sideFont: "something",
+        sideSize: 17,
+        sideFontColor: "#000000",
         someValue:1100
 
     };

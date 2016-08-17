@@ -24,7 +24,20 @@ var Default_Values = new Schema({
   thirdTextColor:{type: String},
   thirdTextBold:{type: Boolean},
   thirdTextItal:{type: Boolean},
-  someValue: {type: Number}
+  sideTextOne: {type:String},
+  sideTextTwo: {type:String},
+  sideTextThree: {type:String},
+  sideTextFour: {type:String},
+  sideTextFive: {type:String},
+  sideTextSix: {type:String},
+  sideTextSeven: {type:String},
+  sideTextEight: {type:String},
+  sideTextNine: {type:String},
+  sideTexTen: {type:String},
+  someValue: {type: Number},
+  sideFont: {type: String},
+  sideSize: {type:Number},
+  sideFontColor:{type:String}
 
 });
 
