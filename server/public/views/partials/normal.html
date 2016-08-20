@@ -1,1 +1,31 @@
-<h1>boo</h1>
+<div flex="no-grow" style="overflow: scroll; height:90vh;">
+    <md-content>
+        <div layout="column" layout-align="center center">
+            <div class="top-text" style="text-align:center;">
+                <h2>{{inputData.secondText}}</h2>
+                <p>{{inputData.thirdText}}</p>
+            </div>
+
+            <div class="summary">
+                <h4></h4>
+            </div>
+
+
+            <div layout="row" layout-padding layout-align="center center" class="email-box">
+                <div flex="33">
+                    <md-button class="md-raised md-primary" ng-click="submitEmail()">Contact Me</button>
+                </div>
+                <div flex="66">
+                    <md-input-container flex="no-grow" class="md-block">
+                        <label>email address</label>
+                        <input ng-model="submit.email">
+                    </md-input-container>
+                </div>
+            </div>
+            <div id="admin-link">
+                    <a href = "/views/login.html">Admin Login</a>
+            </div>
+        </div>
+    </md-content>
+</div>
+</div>

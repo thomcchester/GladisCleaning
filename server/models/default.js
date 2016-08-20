@@ -37,7 +37,32 @@ var Default_Values = new Schema({
   someValue: {type: Number},
   sideFont: {type: String},
   sideSize: {type:Number},
-  sideFontColor:{type:String}
+  sideFontColor:{type:String},
+  aboutHead={type:String},
+  aboutHeadSize={type:Number},
+  aboutHeadColor={type:String},
+  aboutHeadBold={type:Boolean},
+  aboutHeadItal={type:Boolean},
+  aboutHeadFont={type:String},
+  aboutSecondOne={type:String},
+  aboutSecondTwo={type:String},
+  aboutSecondThree={type:String},
+  aboutSecondFour={type:String},
+  aboutSecondFive={type:String},
+  aboutTwoText={type:String},
+  aboutThreeText={type:String},
+  aboutFourText={type:String},
+  aboutFiveText={type:String},
+  aboutSecondFont={type:String},
+  aboutSecondBold={type:Boolean},
+  aboutSecondSize={type: Number},
+  aboutSecondColor={type:String},
+  aboutSecondItal={type:Boolean},
+  aboutTextFont={type:String},
+  aboutTextBold={type:String},
+  aboutTextSize={type: Number},
+  aboutTextColor={type:String},
+  aboutTextItal=(type:Boolean)
 
 });
 

@@ -47,6 +47,31 @@ router.route('/')
             sideTextEight : req.body.sideTextEight,
             sideTextNine : req.body.sideTextNine,
             sideTextTen : req.body.sideTextTen
+            aboutHead: req.body.aboutHead,
+            aboutHeadSize: req.body.aboutHeadSize,
+            aboutHeadColor: req.body.aboutHeadColor,
+            aboutHeadBold: req.body.aboutHeadBold,
+            aboutHeadItal: req.body.aboutHeadItal,
+            aboutHeadFont: req.body.aboutHeadFont,
+            aboutSecondOne: req.body.aboutSecondOne,
+            aboutSecondTwo: req.body.aboutSecondTwo,
+            aboutSecondThree: req.body.aboutSecondThree,
+            aboutSecondFour: req.body.aboutSecondFour,
+            aboutSecondFive: req.body.aboutSecondFive,
+            aboutTwoText: req.body.aboutTwoText,
+            aboutThreeText: req.body.aboutThreeText,
+            aboutFourText: req.body.aboutFourText,
+            aboutFiveText: req.body.aboutFiveText,
+            aboutSecondFont: req.body.aboutSecondFont,
+            aboutSecondBold: req.body.aboutSecondBold,
+            aboutSecondSize: req.body.aboutSecondSize,
+            aboutSecondColor: req.body.aboutSecondColor,
+            aboutSecondItal: req.body.aboutSecondItal,
+            aboutTextFont: req.body.aboutTextFont,
+            aboutTextBold: req.body.aboutTextBold,
+            aboutTextSize: req.body.aboutTextSize,
+            aboutTextColor: req.body.aboutTextColor,
+            aboutTextItal: req.body.aboutTextItal
 
         });
         defaults.save(function(err, defaults){
@@ -93,6 +118,31 @@ router.route('/')
             defaults.sideFont = req.body.sideFont;
             defaults.sideSize = req.body.sideSize;
             defaults.sideFontColor = req.body.sideFontColor;
+            defaults.aboutHead= req.body.aboutHead,
+            defaults.aboutHeadSize= req.body.aboutHeadSize,
+            defaults.aboutHeadColor= req.body.aboutHeadColor,
+            defaults.aboutHeadBold= req.body.aboutHeadBold,
+            defaults.aboutHeadItal= req.body.aboutHeadItal,
+            defaults.aboutHeadFont= req.body.aboutHeadFont,
+            defaults.aboutSecondOne= req.body.aboutSecondOne,
+            defaults.aboutSecondTwo= req.body.aboutSecondTwo,
+            defaults.aboutSecondThree= req.body.aboutSecondThree,
+            defaults.aboutSecondFour= req.body.aboutSecondFour,
+            defaults.aboutSecondFive= req.body.aboutSecondFive,
+            defaults.aboutTwoText= req.body.aboutTwoText,
+            defaults.aboutThreeText= req.body.aboutThreeText,
+            defaults.aboutFourText= req.body.aboutFourText,
+            defaults.aboutFiveText= req.body.aboutFiveText,
+            defaults.aboutSecondFont= req.body.aboutSecondFont,
+            defaults.aboutSecondBold= req.body.aboutSecondBold,
+            defaults.aboutSecondSize= req.body.aboutSecondSize,
+            defaults.aboutSecondColor= req.body.aboutSecondColor,
+            defaults.aboutSecondItal= req.body.aboutSecondItal,
+            defaults.aboutTextFont= req.body.aboutTextFont,
+            defaults.aboutTextBold= req.body.aboutTextBold,
+            defaults.aboutTextSize= req.body.aboutTextSize,
+            defaults.aboutTextColor= req.body.aboutTextColor,
+            defaults.aboutTextItal= req.body.aboutTextItal
 
 
 

@@ -51,7 +51,34 @@ $scope.getDefaults = function() {
       $scope.inputData.sideTextTen= defaultVariables.sideTextTen;
       $scope.inputData.sideFont = defaultVariables.sideFont;
       $scope.inputData.sideSize = defaultVariables.sideSize;
-      $scope.inputData.sideFontColor = defaultVaribales.sideFontColor;
+      $scope.inputData.sideFontColor = defaultVariables.sideFontColor;
+
+      $scope.inputData.aboutHead=defaultVariables.aboutHead;
+      $scope.inputData.aboutHeadSize=defaultVariables.aboutHeadSize;
+      $scope.inputData.aboutHeadColor=defaultVariables.aboutHeadColor;
+      $scope.inputData.aboutHeadBold=defaultVariables.aboutHeadBold;
+      $scope.inputData.aboutHeadItal=defaultVariables.aboutHeadItal;
+      $scope.inputData.aboutHeadFont=defaultVariables.aboutHeadFont;
+      $scope.inputData.aboutSecondOne=defaultVariables.aboutSecondOne;
+      $scope.inputData.aboutSecondTwo=defaultVariables.aboutSecondTwo;
+      $scope.inputData.aboutSecondThree=defaultVariables.aboutSecondThree;
+      $scope.inputData.aboutSecondFour=defaultVariables.aboutSecondFour;
+      $scope.inputData.aboutSecondFive=defaultVariables.aboutSecondFive;
+      $scope.inputData.aboutTwoText=defaultVariables.aboutTwoText;
+      $scope.inputData.aboutThreeText=defaultVariables.aboutThreeText;
+      $scope.inputData.aboutFourText=defaultVariables.aboutFourText;
+      $scope.inputData.aboutFiveText=defaultVariables.aboutFiveText;
+      $scope.inputData.aboutSecondFont=defaultVariables.aboutSecondFont;
+      $scope.inputData.aboutSecondBold=defaultVariables.aboutSecondBold;
+      $scope.inputData.aboutSecondSize=defaultVariables.aboutSecondSize;
+      $scope.inputData.aboutSecondColor=defaultVariables.aboutSecondColor;
+      $scope.inputData.aboutSecondItal=defaultVariables.aboutSecondItal;
+      $scope.inputData.aboutTextFont=defaultVariables.aboutTextFont;
+      $scope.inputData.aboutTextBold=defaultVariables.aboutTextBold;
+      $scope.inputData.aboutTextSize=defaultVariables.aboutTextSize;
+      $scope.inputData.aboutTextColor=defaultVariables.aboutTextColor;
+      $scope.inputData.aboutTextItal=defaultVariables.abouttextItal;
+
       console.log(defaultVariables, "defaultVariables");
   });
 };
