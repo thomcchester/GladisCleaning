@@ -30,14 +30,14 @@
             </div>
         </md-toolbar>
     </header>
-    <iframe src="https://calendar.google.com/calendar/embed?src=thomas.charles.chester%40gmail.com&ctz=America/Chicago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
     <div layout="row">
         <md-sidenav md-component-id="left" class="md-sidenav-left md-whiteframe-z2" md-is-locked-open="true" style="overflow-y: scroll; height: 90vh;">
             <div layout="column" layout-align="center center" layout-padding>
                 <md-content>
                     <form>
                         <h2>Side Things</h2>
-                        <h3>{{inputData.sideTextOne}}</h3>
+                        <h3 label="{{inputData.sideTextOne}}" ng-click="toCalendar()"></h3>
                         <h3>{{inputData.sideTextTwo}}</h3>
                         <h3>{{inputData.sideTextThree}}</h3>
                         <h3>{{inputData.sideTextFour}}</h3>
@@ -82,5 +82,8 @@
             </md-content>
         </div>
     </div>
+    <main ng-view>
+
+    </main>
 </body>
 </html>

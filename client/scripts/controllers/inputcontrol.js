@@ -1,4 +1,8 @@
 App.controller('InputController',  ['$scope', '$log', '$http', '$window', '$mdSidenav', "$mdDialog", "$mdMedia", 'ClientService',function($scope, $log, $http, $window, $mdSidenav, $mdDialog, $mdMedia, ClientService) {
+  $scope.toCalendar= function(){
+    $window.location.href = '#calendar';
+  };
+
     //Independent Variables
     var clientService = ClientService;
 

@@ -1,7 +1,18 @@
 var App = angular.module("App", ['ngMaterial', 'ngMessages', 'ngRoute', 'googlechart']);
 
 App.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider){
-
+    $routeProvider.
+      when("/calendar",{
+          templateUrl:"/views/partials/calendar.html",
+          controller: "InputController"
+      }).
+      when("/normal",{
+        templateUrl:"/views/partials/normal.html",
+        controller:"InputController"
+      }).
+      otherwise({
+        redirectTo:'/normal'
+      })
 }]);
 
 var AppAdmin = angular.module("AppAdmin", ['ngMaterial', 'ngMessages', 'ngRoute', 'md.data.table']);
