@@ -49,6 +49,7 @@ var Default_Values = new Schema({
   aboutSecondThree={type:String},
   aboutSecondFour={type:String},
   aboutSecondFive={type:String},
+  aboutOneText={type:String},
   aboutTwoText={type:String},
   aboutThreeText={type:String},
   aboutFourText={type:String},

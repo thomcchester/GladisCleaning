@@ -66,6 +66,7 @@ App.factory("ClientService", ["$http", function($http){
         aboutSecondThree="text of some sort",
         aboutSecondFour="text of some sort",
         aboutSecondFive="text of some sort",
+        aboutOneText="longer Smaller Text"
         aboutTwoText="longer smaller text",
         aboutThreeText="longer smaller text",
         aboutFourText="longer smaller text",

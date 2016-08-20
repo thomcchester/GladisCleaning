@@ -64,6 +64,7 @@ $scope.getDefaults = function() {
       $scope.inputData.aboutSecondThree=defaultVariables.aboutSecondThree;
       $scope.inputData.aboutSecondFour=defaultVariables.aboutSecondFour;
       $scope.inputData.aboutSecondFive=defaultVariables.aboutSecondFive;
+      $scope.inputDat.aboutOneText=defaultVariables.aboutOneText;
       $scope.inputData.aboutTwoText=defaultVariables.aboutTwoText;
       $scope.inputData.aboutThreeText=defaultVariables.aboutThreeText;
       $scope.inputData.aboutFourText=defaultVariables.aboutFourText;
