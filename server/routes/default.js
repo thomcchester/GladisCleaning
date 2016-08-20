@@ -46,7 +46,7 @@ router.route('/')
             sideTextSeven : req.body.sideTextSeven,
             sideTextEight : req.body.sideTextEight,
             sideTextNine : req.body.sideTextNine,
-            sideTextTen : req.body.sideTextTen
+            sideTextTen : req.body.sideTextTen,
             aboutHead: req.body.aboutHead,
             aboutHeadSize: req.body.aboutHeadSize,
             aboutHeadColor: req.body.aboutHeadColor,

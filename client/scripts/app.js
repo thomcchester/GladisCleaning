@@ -6,6 +6,10 @@ App.config(["$routeProvider", "$locationProvider", function($routeProvider, $loc
           templateUrl:"/views/partials/calendar.html",
           controller: "InputController"
       }).
+      when("/about",{
+          templateUrl:"views/partials/about.html",
+          controller: "InputController"
+      }).
       when("/normal",{
         templateUrl:"/views/partials/normal.html",
         controller:"InputController"

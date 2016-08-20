@@ -3,6 +3,14 @@ App.controller('InputController',  ['$scope', '$log', '$http', '$window', '$mdSi
     $window.location.href = '#calendar';
   };
 
+  $scope.toAbout= function(){
+    $window.location.href = '#about';
+  };
+
+  $scope.toNormal= function(){
+    $window.location.href = '#normal';
+  };
+
     //Independent Variables
     var clientService = ClientService;
 
