@@ -1,4 +1,5 @@
 App.controller('InputController',  ['$scope', '$log', '$http', '$window', '$mdSidenav', "$mdDialog", "$mdMedia", 'ClientService',function($scope, $log, $http, $window, $mdSidenav, $mdDialog, $mdMedia, ClientService) {
+  $scope.inputData = {};
   $scope.toCalendar= function(){
     $window.location.href = '#calendar';
   };
@@ -19,15 +20,14 @@ App.controller('InputController',  ['$scope', '$log', '$http', '$window', '$mdSi
     };
 
 
-$scope.inputData = {};
+
 
 $scope.minMax = {};
 
 $scope.getDefaults = function() {
   $http.get("/defaults").then(function(response){
       defaultVariables = response.data[0];
-      $scope.minMax = defaultVariables;
-
+      console.log(defaultVariables, " HERE")
       $scope.inputData.someValue= defaultVariables.someValue;
       $scope.inputData.headerBackgroundColor= defaultVariables.headerBackgroundColor;
       $scope.inputData.headerBackgroundHeight= defaultVariables.headerBackgroundHeight;
@@ -38,11 +38,14 @@ $scope.getDefaults = function() {
       $scope.inputData.headMainTextColor= defaultVariables.headMainTextColor;
       $scope.inputData.headMainTextBold= defaultVariables.headMainTextBold;
       $scope.inputData.headMainTextItal= defaultVariables.headMainTextItal;
+      $scope.inputData.headMainFont= defaultVariables.headMainFont;
       $scope.inputData.secondText= defaultVariables.secondText;
+      $scope.inputData.secondTextFont = defaultVariables.secondTextFont;
       $scope.inputData.secondTextSize= defaultVariables.secondTextSize;
       $scope.inputData.secondTextColor= defaultVariables.secondTextColor;
       $scope.inputData.secondTextBold= defaultVariables.secondTextBold;
       $scope.inputData.thirdText= defaultVariables.thirdText;
+      $scope.inputData.thirdTextFont= defaultVariables.thirdTextFont;
       $scope.inputData.thirdTextSize= defaultVariables.thirdTextSize;
       $scope.inputData.thirdTextColor= defaultVariables.third;
       $scope.inputData.thirdTextBold= defaultVariables.thirdTextBold;
@@ -60,7 +63,6 @@ $scope.getDefaults = function() {
       $scope.inputData.sideFont = defaultVariables.sideFont;
       $scope.inputData.sideSize = defaultVariables.sideSize;
       $scope.inputData.sideFontColor = defaultVariables.sideFontColor;
-
       $scope.inputData.aboutHead=defaultVariables.aboutHead;
       $scope.inputData.aboutHeadSize=defaultVariables.aboutHeadSize;
       $scope.inputData.aboutHeadColor=defaultVariables.aboutHeadColor;
@@ -72,7 +74,7 @@ $scope.getDefaults = function() {
       $scope.inputData.aboutSecondThree=defaultVariables.aboutSecondThree;
       $scope.inputData.aboutSecondFour=defaultVariables.aboutSecondFour;
       $scope.inputData.aboutSecondFive=defaultVariables.aboutSecondFive;
-      $scope.inputDat.aboutOneText=defaultVariables.aboutOneText;
+      $scope.inputData.aboutOneText=defaultVariables.aboutOneText;
       $scope.inputData.aboutTwoText=defaultVariables.aboutTwoText;
       $scope.inputData.aboutThreeText=defaultVariables.aboutThreeText;
       $scope.inputData.aboutFourText=defaultVariables.aboutFourText;
@@ -87,44 +89,64 @@ $scope.getDefaults = function() {
       $scope.inputData.aboutTextSize=defaultVariables.aboutTextSize;
       $scope.inputData.aboutTextColor=defaultVariables.aboutTextColor;
       $scope.inputData.aboutTextItal=defaultVariables.abouttextItal;
-
-      console.log(defaultVariables, "defaultVariables");
   });
 };
 
 $scope.getDefaults();
-console.log($scope.inputData)
+
 
 var service = ClientService;
 
 $scope.$watchCollection('inputData', function(newVal, oldVal){
-  var italics;
-  italics=function(input){
-    if(input==true){
-      input="italics";
+  var fontTotal;
+  fontTotal=[];
+  var fontChange = function(kitty){
+    if(kitty=="Ubuntu"){
+      fontTotal.push(kitty);
+      kitty="'Ubuntu', sans-serif"
     }
-    else if(input==false){
-      input="normal";
-    };
+    else if(kitty=="Open Sans"){
+      fontTotal.push(kitty);
+      kitty="'Open Sans', sans-serif"
+    }
+    else if(kitty=="Arvo"){
+      fontTotal.push(kitty);
+      kitty="'Arvo', serif"
+    }
+    else if(kitty=="Lato"){
+      fontTotal.push(kitty);
+      kitty="'Lato', sans-serif"
+    }
+    else if(kitty=="Vollkorn"){
+      fontTotal.push(kitty);
+      kitty="'Vollkorn', sans-serif"
+    }
+    else if(kitty=="PT Sans"){
+      fontTotal.push(kitty);
+      kitty="'PT Sans', serif"
+    }
+    else if(kitty=="PT Serif"){
+      fontTotal.push(kitty);
+      kitty="'PT Serif', serif"
+    }
+    else if(kitty=="Old Standard TT"){
+      fontTotal.push(kitty);
+      kitty="'Old Standar TT', serif"
+    }
+    else if(kitty=="Droid Sans"){
+      fontTotal.push(kitty);
+      kitty="'Droid Sans', sans-serif "
+    }
   };
-  var bold;
-  bold=function(input){
-    if(input==true){
-      input="bold"
-    }
-    else if(input==false){
-      input="normal"
-    }
-  }
+  console.log(fontTotal, "before")
+  fontChange(newVal.headMainFont);
+  fontChange(newVal.secondTextFont);
+  fontChange(newVal.thirdTextFont);
 
-  italics(inputData.headMainTextItal);
-  italics(inputData.secondTextItal);
-  italics(inputData.thirdTextItal);
+  console.log(_.uniq(fontTotal, false), "after");
 
 
 });
-
-
 
 
     ///chart stuffff

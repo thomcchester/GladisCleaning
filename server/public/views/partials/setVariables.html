@@ -1,8 +1,14 @@
+
+
 <p class="admin1stH5">
   You may set default variables with this form.
 </p>
+
+
+<h1>Fonts</h1>
+<img src="partials/pictures/fonts.png" alt="fonts" />
 <div>
-  <form name="defaultValuesForm">
+  <form name="defaultValuesHeaderForm">
     <div layout="row">
       <div flex="25">
         <h5 class="admin1stH5">Variable:</h5>
@@ -10,14 +16,7 @@
       <div flex="25">
         <h5>Default</h5>
       </div>
-      <div flex="25">
-        <h5>Min</h5>
-      </div>
-      <div flex="25">
-        <h5>Max</h5>
-      </div>
     </div>
-
     <div layout="row" class="adminFormDiv odd">
       <div flex="25">
         <label class="adminLabel">Header Background Color</label>
@@ -34,6 +33,63 @@
         <input type="number" step="any" name="headerBackgroundHeight" id="headerBackgroundHeight" ng-model="defaultVariables.headerBackgroundHeight" required>
       </div>
     </div>
+    <div layout="row" class="adminFormDiv">
+      <div flex="25">
+        <label class="adminLabel">Header Text</label>
+      </div>
+      <div flex="25">
+        <input type="string"  name="headMainText" id="headMainText" ng-model="defaultVariables.headMainText" required>
+      </div>
+      <div flex="25">
+        <label class="adminLabel">Header Font</label>
+      </div>
+      <div flex="25">
+        <input type="string"  name="headMainText" id="headMainFont" ng-model="defaultVariables.headMainFont" required>
+      </div>
+    </div>
+    <div layout="row" class="adminFormDiv odd">
+      <div flex="25">
+        <label class="adminLabel">Header Font Size</label>
+      </div>
+      <div flex="25">
+        <input type="number" step="any" name="headMainTextSize" id="headMainTextSize" ng-model="defaultVariables.headMainTextSize" required>
+      </div>
+    </div>
+    <div layout="row" class="adminFormDiv odd">
+      <div flex="25">
+        <label class="adminLabel">Header Font Color</label>
+      </div>
+      <div flex="25">
+        <input type="string" name="headMainTextColor" id="headMainTextColor" ng-model="defaultVariables.headMainTextColor" required>
+      </div>
+    </div>
+    <div layout="row" class="adminFormDiv">
+      <div flex="25">
+        <label class="adminLabel">Head Text Bold</label>
+      </div>
+      <md-switch ng-model=defaultVariables.headMainTextBold>
+      {{defaultVariables.headMainTextBold}}
+      </md-switch>
+
+    </div>
+    <div layout="row" class="adminFormDiv odd">
+      <div flex="25">
+        <label class="adminLabel">Header Text italics<label>
+      </div>
+      <div flex="25">
+        <md-switch ng-model=defaultVariables.headMainTextItal>
+        {{defaultVariables.headMainTextItal}}
+        </md-switch>
+      </div>
+
+    </div>
+    <div class="adminSubmit">
+      <md-button class="md-raised md-primary" type="submit" value="Submit Header Values" ng-click="defaultValuesForm.$valid && setDefaultValues(defaultVariables)">Submit Default Values</md-button>
+    </div>
+  </form>
+
+
+
 
     <div layout="row" class="adminFormDiv odd">
       <div flex="25">
@@ -54,56 +110,7 @@
     </div>
 
 
-    <div layout="row" class="adminFormDiv">
-      <div flex="25">
-        <label class="adminLabel">Header Text</label>
-      </div>
-      <div flex="25">
-        <input type="string"  name="headMainText" id="headMainText" ng-model="defaultVariables.headMainText" required>
-      </div>
 
-    </div>
-
-    <div layout="row" class="adminFormDiv odd">
-      <div flex="25">
-        <label class="adminLabel">Header Font Size</label>
-      </div>
-      <div flex="25">
-        <input type="number" step="any" name="headMainTextSize" id="headMainTextSize" ng-model="defaultVariables.headMainTextSize" required>
-      </div>
-
-    </div>
-
-    <div layout="row" class="adminFormDiv odd">
-      <div flex="25">
-        <label class="adminLabel">Header Font Color</label>
-      </div>
-      <div flex="25">
-        <input type="string" name="headMainTextColor" id="headMainTextColor" ng-model="defaultVariables.headMainTextColor" required>
-      </div>
-
-    </div>
-
-
-    <div layout="row" class="adminFormDiv">
-      <div flex="25">
-        <label class="adminLabel">Head Text Bold yes/no </label>
-      </div>
-      <div flex="25">
-        <input type="boolean" step="any" name="headMainTextBold" id="Head Text Bold" ng-model="defaultVariables.headMainTextBold" required>
-      </div>
-
-    </div>
-
-    <div layout="row" class="adminFormDiv odd">
-      <div flex="25">
-        <label class="adminLabel">Header Text initialize<label>
-      </div>
-      <div flex="25">
-        <input type="number" step="any" name="headMainTextItal" id="headMainTextItal" ng-model="defaultVariables.headMainTextItal" required>
-      </div>
-
-    </div>
 
     <div layout="row" class="adminFormDiv">
       <div flex="25">

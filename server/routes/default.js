@@ -27,12 +27,15 @@ router.route('/')
             headMainTextColor: req.body.headMainTextColor,
             headMainTextBold: req.body.headMainTextBold,
             headMainTextItal: req.body.headMainTextItal,
+            headMainFont: req.body.headMainFont,
             secondText: req.body.secondText,
+            secondTextFont: req.body.secondTextFont,
             secondTextSize : req.body.secondTextSize,
             secondTextColor : req.body.secondTextColor,
             secondTextBold : req.body.secondTextBold,
             secondTextItal : req.body.secondTextItal,
             thirdText : req.body.thirdText,
+            thirdTextFont: req.body.thirTextFont,
             thirdTextSize : req.body.thirdTextSize,
             thirdTextColor : req.body.thirdTextColor,
             thirdTextBold : req.body.thirdTextBold,
@@ -47,6 +50,7 @@ router.route('/')
             sideTextEight : req.body.sideTextEight,
             sideTextNine : req.body.sideTextNine,
             sideTextTen : req.body.sideTextTen,
+            sideFont: req.body.sideFont,
             aboutHead: req.body.aboutHead,
             aboutHeadSize: req.body.aboutHeadSize,
             aboutHeadColor: req.body.aboutHeadColor,
@@ -92,17 +96,21 @@ router.route('/')
             defaults.sideNavWidth= req.body.sideNavWidth;
             defaults.sideNavBackgroundColor= req.body.sideNavBackgroundColor;
             defaults.headMainText= req.body.headMainText;
+            defaults.headMainFont=req.body.headMainFont;
             defaults.headMainTextSize= req.body.headMainTextSize;
             defaults.headMainTextColor= req.body.headMainTextColor;
             defaults.headMainTextBold= req.body.headMainTextBold;
             defaults.headMainTextItal= req.body.headMainTextItal;
+            defaults.headMainFont = req.body.headMainFont;
             defaults.secondText= req.body.secondText;
+            defaults.secondTextFont= req.body.secondTextFont;
             defaults.secondTextSize = req.body.secondTextSize;
             defaults.secondTextColor = req.body.secondTextColor;
             defaults.secondTextBold = req.body.secondTextBold;
             defaults.secondTextBold = req.body.secondTextBold;
             defaults.secondTextItal = req.body.secondTextItal;
             defaults.thirdText = req.body.thirdText;
+            defaults.thirdText = req.body.thirdTextFont;
             defaults.thirdTextSize = req.body.thirdTextSize;
             defaults.thirdTextColor = req.body.thirdTextColor;
             defaults.thirdTextBold = req.body.thirdTextBold;
@@ -116,6 +124,7 @@ router.route('/')
             defaults.sideTextSeven = req.body.sideTextSix;
             defaults.sideTextEight = req.body.sideTextSeven;
             defaults.sideTextNine = req.body.sideTextEight;
+            defaults.sideTextTen = req.body.sideTextTen;
             defaults.sideFont = req.body.sideFont;
             defaults.sideSize = req.body.sideSize;
             defaults.sideFontColor = req.body.sideFontColor;

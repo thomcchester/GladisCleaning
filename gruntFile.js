@@ -19,6 +19,7 @@ module.exports = function(grunt) {
            expand: true,
            cwd: 'node_modules',
            src: [
+              "underscore/*",
               "angular/*",
               "angular-animate/*",
               "angular-aria/*",
@@ -37,7 +38,8 @@ module.exports = function(grunt) {
            cwd: 'client/views/',
            src: [
               "*",
-              "partials/*"
+              "partials/*",
+              "partials/**"
             ],
             "dest": "server/public/views/"
         },
